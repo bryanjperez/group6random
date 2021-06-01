@@ -32,7 +32,7 @@
                   <!-- Drobdown protein menu. Applied <center> for now. check if there's a better way to do it. -->
                   <label><center><h4>Choose your protein</h4></center></label>
                   <div class="large-6 cell">
-                <center> <select>
+                <center> <select id="protein-choice">
                     <option value="Beef">Beef</option>
                     <option value="Chicken">Chicken</option>
                     <option value="Pork">Pork</option>
@@ -50,7 +50,7 @@
           <div class="grid-x grid-padding-x">
             <div class="large-6 medium-6 cell">
               <div class="primary callout">
-                <h4><center>Recipe Title</center></h4>
+                <h4 id="title"><center>Recipe Title</center></h4>
                 <div class="large-6 medium-6 cell">
                   <!-- classname recipe-steps for API -->
                   <div class="secondary callout recipe-steps">
@@ -77,9 +77,14 @@
       </div>
     </div>
 
+    <button id="test" type="submit">Let's Get Cooking!</button>
+
 <!-- Preloaded JS files that came with foundation download -->
-<script src="assets/js/vendor.js"></script>
-<script src="assets/js/foundation.js"></script>
+<!-- <script src="assets/js/vendor.js"></script>
+<script src="assets/js/foundation.js"></script> -->
 <!-- end of preloaded JS files -->
+<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+<script src="./Assets/JS/recipe.js"></script>
+
 </body>
 </html>
