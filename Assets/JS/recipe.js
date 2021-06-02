@@ -77,8 +77,30 @@ var getRecipe = function(ingredients) {
     });
 }
 
+
+var getWinePairing = function(ingredients) {
+    
+    var wineUrl = "https://api.spoonacular.com/food/wine/pairing?food="  + ingredients + "&apiKey=74fc4298bde04bef9ffd2a2a8b92fde7"
+  
+      $.ajax({
+        url: wineUrl,
+        method: "GET"
+    }).then(function (response) {
+         console.log(response);
+  
+        $("#winePairing").empty();
+  
+        let winePairing = (response.productMatches[0].title);
+        console.log(winePairing);
+  
+        $("#winePairing").append(winePairing);
+      });
+    }
+  
+
 $( "#test" ).click(function() {
     ingredients = myProtein.options[myProtein.selectedIndex].text;
     console.log(ingredients);
     getRecipe(ingredients);
+    getWinePairing(ingredients);
   });
