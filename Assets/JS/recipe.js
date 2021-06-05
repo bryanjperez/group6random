@@ -1,11 +1,5 @@
 var myProtein = document.getElementById("protein-choice");
 
-// var titleStorage = $("#title").text();
-
-// console.log(titleStorage);
-
-// console.log(titleStorage.length);
-
 var getRecipe = function(ingredients) {
     // format the url 
     var ingredientUrl = "https://api.edamam.com/search?q=" + ingredients + "&app_id=f5531771&app_key=e387c767349ba49eb1367aded3883751"
@@ -16,18 +10,14 @@ var getRecipe = function(ingredients) {
         url: ingredientUrl,
         method: "GET"
     }).then(function (response) {
-        console.log(response);
-        let x = Math.floor(Math.random() * 10);
-        
-        console.log(response.hits[x].recipe.label);
 
-        console.log(response.hits[x].recipe.uri);
+        let x = Math.floor(Math.random() * 10);
 
         var recipeTitle = response.hits[x].recipe.label;
 
         $("#title").empty();
 
-        $("#title").append(recipeTitle);
+        $("#title").append("<center>" + recipeTitle + "</center>");
 
         var titleStorage = $("#title").text();
 
@@ -68,9 +58,8 @@ var getWinePairing = function(ingredients) {
 
         localStorage.setItem("Wine",wineStorage);
 
-      });
-    }
-  
+    });
+}
 
 $( "#test" ).click(function() {
     ingredients = myProtein.options[myProtein.selectedIndex].text;
@@ -111,7 +100,7 @@ function getWineStorage () {
 
 var wineKey = window.localStorage.getItem("Wine");
 if (wineKey === null) {
-    console.log("this is working");
+
 } else {
     getWineStorage();
 }
