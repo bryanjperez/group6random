@@ -6,7 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ambience</title>
     <link rel="stylesheet" href="./Assets/stylesheet.css">
-<!-- HTML style tag to change the background to a dinner party image. Temporary placeholder until we focus more on stylesheet. -->
+    
+<!-- HTML style tag to change the background to a dinner party image. -->
     <style>
       body {
         background: url(./Assets/images/photo-1602860210970-19d0f8c8f48d.jpeg) no-repeat center center fixed;
@@ -18,26 +19,37 @@
     </style>
     <!-- **END BODY STYLING** -->
   </head>
+  
 <body>
   <header>
     Ambience
   </header>
+
 <!-- First container - User picks protein source -->
       <div class="grid-x grid-padding-x">
-        <div class="large-5 medium-5 cell float-center">
+        <div class="large-3 medium-3 cell float-center">
               <div class="primary callout">
               <div class="grid-x grid-padding-x">
                 <div class="large-12 cell">
-                  <!-- Drobdown protein menu. Applied <center> for now. check if there's a better way to do it. -->
+
+                  <!-- Drobdown protein menu -->
+                  
                   <label><center><h4>Choose your protein</h4></center></label>
-                  <div class="large-6 cell">
+                  <div class="large-3 cell">
                 <center> <select id="protein-choice">
                     <option value="Beef">Beef</option>
                     <option value="Chicken">Chicken</option>
                     <option value="Pork">Pork</option>
                     <option value="Fish">Fish</option>
-                    <option value="Tofu">Tofu</option>
+                    <!-- Veggie option will be available in Ambience 2.0 -->
                   </select></center>
+
+                  <!-- Dessert option will be available in Ambience 2.0 -->
+
+                  <!-- Click button to generate recipe and wine pairing -->
+            
+                  <center><button id="test" type="submit">Let's Get Cooking!</button></center>
+                
                   <!-- end of dropdown menu -->
                   </div>
                 </div>
@@ -47,7 +59,7 @@
           </div>
           <!-- Begin recipe container -->
           <div class="grid-x grid-padding-x">
-            <div class="large-6 medium-6 cell">
+            <div class="large-3 medium-3 cell float-center">
               <div class="primary callout">
                 <h4 id="title"><center>Recipe Title</center></h4>
                 <div class="large-6 medium-6 cell">
@@ -58,8 +70,10 @@
               </div>
               </div>
             </div>
+            </div>
               <!-- Begin wine pairing container -->
-                <div class="large-6 medium-6 cell">
+              <div class="grid-x grid-padding-x">
+                <div class="large-3 medium-3 cell float-center">
                   <div class="primary callout">
                     <h4>
                       <center>Wine Pairing</center>
@@ -74,8 +88,8 @@
           </div>
         </div>
       </div>
+      </div>
     </div>
-    <button id="test" type="submit">Let's Get Cooking!</button>
 <!-- Preloaded JS files that came with foundation download -->
 <!-- <script src="assets/js/vendor.js"></script>
 <script src="assets/js/foundation.js"></script> -->
