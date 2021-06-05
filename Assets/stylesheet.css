@@ -30,7 +30,7 @@ header {
   text-align: center;
   font-size: 84px;
   /* background-color: black; */
-  opacity: 0.6;
+  opacity: 0.9;
   text-shadow: 2px 2px white;
 }
 small {
@@ -63,13 +63,13 @@ select {
   appearance: none;
   border: 1px solid #cacaca;
   border-radius: 0;
-  background-color: #cacaca;
+  background-color: white;
   font-family: inherit;
   font-size: 1rem;
   font-weight: normal;
   line-height: 1.5;
   color: black;
-  text-shadow: 2px 2px goldenrod;
+  /* text-shadow: 2px 2px goldenrod; */
   background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' version='1.1' width='32' height='24' viewBox='0 0 32 24'><polygon points='0,0 32,0 16,24' style='fill: rgb%28138, 138, 138%29'></polygon></svg>");
   background-origin: content-box;
   background-position: right -1rem center;
@@ -81,8 +81,8 @@ select {
   transition: box-shadow 0.5s, border-color 0.25s ease-in-out;
   transition: box-shadow 0.5s, border-color 0.25s ease-in-out,
     -webkit-box-shadow 0.5s;
-  width: 25%;
-  border-radius: 0px;
+  width: 35%;
+  border-radius: 35px;
   align-items: center;
 }
 @media screen and (min-width: 0\0) {
@@ -110,7 +110,7 @@ h6,
 
 h4,
 .h4 {
-  font-size: 1.125rem;
+  font-size: 24px;
   line-height: 1.4;
   margin-top: 0;
   margin-bottom: 0.5rem;
@@ -2234,7 +2234,7 @@ h4,
   margin: 0 0 1rem 0;
   padding: 1rem;
   border: 1px solid rgba(10, 10, 10, 0.25);
-  border-radius: 0;
+  border-radius: 35px;
   background-color: white;
   color: #0a0a0a;
 }
@@ -2245,10 +2245,12 @@ h4,
   margin-bottom: 0;
 }
 .callout.primary {
-  /* background-color: #d7ecfa; */
-  color:#DAA520;
+  background-color: #daa520;
+  color: white;
   opacity: 0.9;
+  text-shadow: 2px 2px black;
 }
+
 .callout.secondary {
   /* background-color: #eaeaea; */
   color: #0a0a0a;
@@ -2282,4 +2284,19 @@ h4,
   display: block;
   margin-right: auto;
   margin-left: auto;
+}
+#steps {
+  color: black;
+  text-shadow: none;
+}
+
+#winePairing {
+  color: black;
+  text-shadow: none;
+}
+#getCooking {
+  border-radius: 35px;
+  background-color: white;
+  font-size: 16px;
+  border: 1px solid rgba(10, 10, 10, 0.25);
 }
