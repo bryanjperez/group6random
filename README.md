@@ -1,5 +1,5 @@
 # Ambience
-![App Demo](./assets/images/ambience-demo.gif)
+![App Demo](./Assets/images/ambience-demo.gif)
 
 The application is to create an immersive experience for a person to easily create an ambiance for either a special occasion or for their own enjoyment. When they arrive on the site, the first thing they see is a form that will intuitively allow them move through selecting a protein to build a meal around, displaying ingredients from a random recipe with a complementary wine pairing. 
 
