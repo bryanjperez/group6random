@@ -8,8 +8,8 @@ The application is to create an immersive experience for a person to easily crea
 AS AN indecisive eater I WANT TO  select a protein SO THAT I can receive a randomized recipe to build a meal around and a complimentary wine pairing. 
 
 ## Technologies
-> HTML, CSS, JS
-> APIs: spoontactular & getcooking.io
+> HTML, CSS (Foundation framework), JS (and jQuery), local storage 
+> APIs: spoontactular & edamam
 
 ## Further Development
 In the future there are plans for several feature additions to improve user experience:
